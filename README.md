@@ -46,30 +46,30 @@ A comprehensive web application for tracking personal finances with advanced bud
 ### Installation
 
 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd personal-finance-visualizer
-\`\`\`
+```
 
 2. Install dependencies:
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Set up environment variables:
-\`\`\`bash
+```bash
 cp .env.example .env.local
-\`\`\`
+```
 
 Add your MongoDB connection string:
-\`\`\`
+```
 MONGODB_URI=your_mongodb_connection_string
-\`\`\`
+```
 
 4. Run the development server:
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
@@ -92,17 +92,17 @@ npm run dev
 
 ## API Endpoints
 
-- \`GET /api/transactions\` - Fetch all transactions
-- \`POST /api/transactions\` - Create new transaction
-- \`PUT /api/transactions/[id]\` - Update transaction
-- \`DELETE /api/transactions/[id]\` - Delete transaction
-- \`GET /api/budgets\` - Fetch current month budgets
-- \`POST /api/budgets\` - Create/update budget
+- `GET /api/transactions` - Fetch all transactions
+- `POST /api/transactions` - Create new transaction
+- `PUT /api/transactions/[id]` - Update transaction
+- `DELETE /api/transactions/[id]` - Delete transaction
+- `GET /api/budgets` - Fetch current month budgets
+- `POST /api/budgets` - Create/update budget
 
 ## Database Schema
 
 ### Transactions Collection
-\`\`\`javascript
+```javascript
 {
   _id: ObjectId,
   amount: Number,
@@ -113,10 +113,10 @@ npm run dev
   createdAt: String (ISO),
   updatedAt: String (ISO)
 }
-\`\`\`
+```
 
 ### Budgets Collection
-\`\`\`javascript
+```javascript
 {
   _id: ObjectId,
   category: String,
@@ -125,7 +125,7 @@ npm run dev
   createdAt: String (ISO),
   updatedAt: String (ISO)
 }
-\`\`\`
+```
 
 ## Features Overview
 
@@ -155,7 +155,7 @@ The application is ready for deployment on Vercel:
 
 1. Push your code to GitHub
 2. Connect your repository to Vercel
-3. Add your \`MONGODB_URI\` environment variable
+3. Add your `MONGODB_URI` environment variable
 4. Deploy!
 
 ## Contributing
@@ -165,7 +165,3 @@ The application is ready for deployment on Vercel:
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details
